@@ -1,0 +1,120 @@
+/*consulta 1*/
+SELECT nombre, localidad, fecha_nac FROM alumnos;
+
+/*consulta 2*/
+SELECT nombre AS 'Nombre y apellidos' FROM alumnos;
+
+/*consulta 3*/
+SELECT nombre, faltas * 2 AS 'Faltas de asistencia' FROM alumnos;
+
+/*consulta 4*/
+SELECT nombre, faltas * 2 AS 'Faltas de asistencia' FROM alumnos;
+
+/*consulta 5*/
+SELECT * FROM alumnos WHERE localidad = 'Lorca';
+
+/*consulta 6*/
+SELECT * FROM alumnos WHERE localidad = 'Murcia' OR localidad = 'Alhama de Murcia';
+
+/*consulta 7*/
+SELECT * FROM alumnos WHERE localidad = 'Murcia' AND curso = 1 AND nivel = 'ESO';
+
+/*consulta 8*/
+SELECT * FROM alumnos WHERE localidad = 'Lorca' AND curso = 2 AND nivel = 'BACHILLER' 
+AND faltas > 10;
+
+/*consulta 9*/
+SELECT * FROM alumnos WHERE localidad = 'Murcia' ORDER BY nombre;
+
+/*consulta 10*/
+SELECT * FROM alumnos ORDER BY nivel, curso;
+
+/*consulta 11*/
+SELECT * FROM alumnos WHERE faltas > 10 AND (curso = 1 OR curso = 2);
+
+/*consulta 12*/
+SELECT * FROM alumnos WHERE faltas < 10 AND (curso = 3 OR curso = 4) 
+AND localidad = 'Murcia';
+
+/*consulta 13*/
+SELECT DISTINCT curso FROM alumnos;
+
+/*consulta 14*/
+SELECT * FROM alumnos WHERE curso = 1 AND nivel = 'ESO' AND faltas != 10;
+
+/*consulta 15*/
+SELECT * FROM alumnos WHERE nombre LIKE 'B%';
+
+/*consulta 16*/
+SELECT * FROM alumnos WHERE localidad = 'Murcia' AND nombre LIKE '%O';
+
+/*consulta 17*/
+SELECT * FROM alumnos WHERE curso = 1 AND nivel = 'ESO' AND nombre LIKE '_U%';
+
+/*consulta 18*/
+SELECT * FROM alumnos WHERE faltas IS NULL;
+
+/*consulta 19*/
+SELECT * FROM alumnos WHERE faltas BETWEEN 10 AND 20 ORDER BY nombre;
+
+/*consulta 20*/
+SELECT * FROM alumnos WHERE faltas BETWEEN 10 AND 20 AND localidad = 'Murcia';
+
+/*consulta 21*/
+SELECT * FROM alumnos WHERE faltas BETWEEN 10 AND 20 AND localidad = 'Murcia'
+ AND curso = 1 AND nivel = 'ESO';
+
+/*consulta 22*/
+SELECT * FROM alumnos WHERE faltas < 10 OR faltas > 20;
+
+/*consulta 23*/
+SELECT * FROM alumnos WHERE YEAR(fecha_nac) BETWEEN 1993 AND 1994 ORDER BY nombre;
+
+/*consulta 24*/
+SELECT * FROM alumnos WHERE curso IN (1, 2);
+
+/*consulta 25*/
+SELECT * FROM alumnos WHERE curso IN (3, 4) AND localidad = 'Murcia';
+
+/*consulta 26*/
+SELECT * FROM alumnos WHERE nivel != 'ESO' ORDER BY curso, nombre DESC;
+
+/*consulta 27*/
+SELECT * FROM alumnos WHERE curso IN (1, 2) AND nivel != 'BACHILLER' 
+ORDER BY nombre;
+
+/*consulta 28*/
+SELECT * FROM alumnos WHERE nombre LIKE 'J%' AND faltas > 10 
+AND nivel != 'BACHILLER' ORDER BY curso, nombre;
+
+/*consulta 29*/
+SELECT expediente, nombre, curso, nivel FROM alumnos WHERE nivel != 'BACHILLER'
+ ORDER BY curso, nivel ASC, nombre DESC;
+ 
+/*consulta 30*/
+SELECT UPPER(nombre) FROM alumnos WHERE localidad = 'Murcia';
+
+/*consulta 31*/
+SELECT UPPER(nombre) AS nombre_mayuscula, LOWER(localidad) 
+AS localidad_minuscula FROM alumnos ORDER BY localidad;
+
+/*consulta 32*/
+SELECT REPLACE(CONCAT(nombre, ' - ', localidad), 'BACHILLER', 'Bachillerato') 
+AS nombre_localidad_modificado FROM alumnos;
+
+/*consulta 33*/
+SELECT nombre, LENGTH(nombre) AS longitud_nombre FROM alumnos;
+
+/*consulta 34*/
+select nombre, YEAR(fecha_nac) AS año_nacimiento, MONTH(fecha_nac)
+ AS mes_nacimiento FROM alumnos;
+
+/*consulta 35*/
+SELECT nombre, (YEAR(CURDATE()) - YEAR(fecha_nac)) - (RIGHT(CURDATE(), 5) <
+ RIGHT(fecha_nac, 5)) AS edad FROM alumnos;
+
+
+
+
+
+

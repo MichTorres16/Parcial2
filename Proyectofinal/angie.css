@@ -1,0 +1,234 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #272928;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    position: relative;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 2em;
+}
+
+h2 {
+    color: #333;
+}
+
+.text-content {
+    background-color: #2f2f31;
+    color: white;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    padding: 1em;
+    max-width: 50%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.text-content h2 {
+    color: white;
+    margin-top: 0;
+}
+
+.text-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.text-content ul li {
+    margin-bottom: 0.5em;
+}
+/* Estilos para el diseño de las secciones */
+.box-section {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.text-content {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Imágenes alineadas a la izquierda */
+.left-img {
+    flex: 0 0 200px; /* Ajusta el ancho de las imágenes */
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+
+/* Imágenes dentro de la lista */
+.inline-image {
+    vertical-align: middle;
+    width: 20px; /* Ajusta el tamaño de las imágenes en la lista */
+    height: auto;
+    margin-right: 10px; /* Espacio entre la imagen y el texto en la lista */
+}
+
+/* Estilos adicionales según sea necesario */
+
+/* Estilos para los botones de Log In y Sign In */
+#login-button,
+#signup-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, filter 0.3s;
+}
+
+#login-button {
+    background-color: #007bff;
+}
+
+#signup-button {
+    background-color: #fff;
+    color: #007bff;
+    margin-left: 10px; /* Espaciado entre los botones */
+}
+
+#login-button:hover,
+#signup-button:hover {
+    filter: brightness(110%);
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #272928;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    position: relative;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 2em;
+}
+
+h2 {
+    color: #333;
+}
+
+.text-content {
+    background-color: #2f2f31;
+    color: white;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    padding: 1em;
+    max-width: 50%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.text-content h2 {
+    color: white;
+    margin-top: 0;
+}
+
+.text-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.text-content ul li {
+    margin-bottom: 0.5em;
+}
+/* Estilos para el diseño de las secciones */
+.box-section {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.text-content {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Imágenes alineadas a la izquierda */
+.left-img {
+    flex: 0 0 200px; /* Ajusta el ancho de las imágenes */
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+
+/* Imágenes dentro de la lista */
+.inline-image {
+    vertical-align: middle;
+    width: 20px; /* Ajusta el tamaño de las imágenes en la lista */
+    height: auto;
+    margin-right: 10px; /* Espacio entre la imagen y el texto en la lista */
+}
+
+/* Estilos adicionales según sea necesario */
+
+/* Estilos para los botones de Log In y Sign In */
+#login-button,
+#signup-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, filter 0.3s;
+}
+
+#login-button {
+    background-color: #007bff;
+}
+
+#signup-button {
+    background-color: #fff;
+    color: #007bff;
+    margin-left: 10px; /* Espaciado entre los botones */
+}
+
+#login-button:hover,
+#signup-button:hover {
+    filter: brightness(110%);
+}
+
+
+
+

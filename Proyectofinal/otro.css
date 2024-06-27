@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #272928;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    position: relative;
+}
+
+.left-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 2em;
+}
+
+h2 {
+    color: #333;
+}
+
+.image-list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.image-list li {
+    display: inline-block; 
+    margin-bottom: 1em;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: left;
+}
+
+.image-list img {
+    max-width: 100%; 
+    height: auto;
+    vertical-align: middle; 
+}
+
+.image-list .content {
+    padding: 1em;
+}
+
+.text-content {
+    background-color: #2f2f31; 
+    color: white; 
+    border: 2px solid #000000; 
+    border-radius: 5px;
+    padding: 1em;
+    max-width: 50%; 
+    margin: 0 auto; 
+    margin-bottom: 20px; 
+}
+
+.text-content h2 {
+    color: white;
+    margin-top: 0;
+}
+h1{
+text-align: center;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.text-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.text-content ul li {
+    margin-bottom: 0.5em;
+}
+
+.image-text-section {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.image-text-section img {
+    margin-right: 20px; 
+    border-radius: 5px;
+}
+.inline-image {
+    max-width: 100px; /* Ajusta el tamaño máximo de la imagen */
+    vertical-align: middle; /* Alinea verticalmente la imagen con el texto */
+    margin-left: 5px; /* Ajusta el margen izquierdo de la imagen */
+    margin-right: 5px; /* Ajusta el margen derecho de la imagen */
+}
+.text-content {
+    display: flex; /* Utiliza flexbox para controlar la distribución del contenido */
+    align-items: center; /* Alinea verticalmente el contenido */
+}
+
